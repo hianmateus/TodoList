@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background: url("./img/background.png");
+}
+
+.Box {
+    width: 500px;
+    background-color: rgb(179, 179, 179);
+    margin: 100px auto 0;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+input {
+    text-decoration: none;
+    width: 320px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+img {
+    height: 25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Task:hover img {
+    opacity: 1;
+}
+
+button {
+    height: 40px;
+    width: 90px;
+    background-color: rgb(53, 94, 53);
+    color: white;
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Button:hover {
+    opacity: 0.7;
+}
+
+.Task {
+    list-style-type: none;
+    width: 437px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0px 1px 16px 3px rgba(0,0,0,0.2);
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
